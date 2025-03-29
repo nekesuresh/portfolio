@@ -4,7 +4,6 @@ import { queryClient } from "./lib/queryClient";
 import { Toaster } from "@/components/ui/toaster";
 import { motion, AnimatePresence } from "framer-motion";
 import AnimatedDots from "@/components/AnimatedDots";
-import Header from "@/components/Header";
 import NavTabs from "@/components/NavTabs";
 import Footer from "@/components/Footer";
 import About from "@/sections/About";
@@ -12,6 +11,8 @@ import Experience from "@/sections/Experience";
 import Projects from "@/sections/Projects";
 import Education from "@/sections/Education";
 import Skills from "@/sections/Skills";
+import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
+import profileImg from "@assets/WhatsApp Image 2025-03-29 at 19.17.03_b83321a6.jpg";
 
 // Tab types for navigation
 type Tab = 'about' | 'experience' | 'projects' | 'education' | 'skills';
@@ -92,18 +93,33 @@ function App() {
           animate={{ opacity: loading ? 0 : 1 }}
           transition={{ duration: 0.5, delay: 0.2 }}
         >
-          <Header />
-          
-          {/* Hero Section */}
-          <section className="flex items-center justify-center py-8 md:py-12 px-4">
+          {/* Hero Section with Profile */}
+          <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pb-20">
             <div className="max-w-6xl mx-auto text-center">
+              {/* Profile Image */}
+              <motion.div 
+                className="mb-8"
+                initial={{ scale: 0.9, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.3 }}
+              >
+                <div className="relative inline-block">
+                  <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/50 via-purple-500/50 to-primary/50 blur-md"></div>
+                  <Avatar className="w-48 h-48 md:w-56 md:h-56 relative profile-image">
+                    <AvatarImage src={profileImg} alt="Neketha Suresh" className="object-cover" />
+                    <AvatarFallback className="bg-primary/20 text-white">NS</AvatarFallback>
+                  </Avatar>
+                </div>
+              </motion.div>
+              
+              {/* Name and Title */}
               <motion.h1 
-                className="futuristic-title text-4xl md:text-5xl lg:text-6xl font-bold mb-6"
+                className="futuristic-title text-4xl md:text-5xl lg:text-6xl font-bold mb-4"
                 initial={{ y: 20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.5 }}
               >
-                Portfolio
+                Neketha Suresh
               </motion.h1>
               
               <motion.div
@@ -111,38 +127,35 @@ function App() {
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.7 }}
               >
-                <p className="futuristic-subtitle text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-8">
-                  Computer Science professional with expertise in Machine Learning, 
-                  Web Development, and Data Analysis
+                <p className="futuristic-subtitle text-xl md:text-2xl text-white/80 max-w-3xl mx-auto mb-2">
+                  MSCS Student & AI Enthusiast
+                </p>
+                <p className="text-md text-gray-400 max-w-2xl mx-auto">
+                  Charlotte, North Carolina
                 </p>
               </motion.div>
               
+              {/* Scroll indicator */}
               <motion.div 
-                className="flex flex-wrap justify-center gap-4 max-w-3xl mx-auto"
-                initial={{ y: 20, opacity: 0 }}
-                animate={{ y: 0, opacity: 1 }}
-                transition={{ duration: 0.8, delay: 0.9 }}
+                className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1, y: [0, 10, 0] }}
+                transition={{ 
+                  opacity: { delay: 1.2, duration: 1 },
+                  y: { delay: 1.2, duration: 1.5, repeat: Infinity, repeatType: "loop" }
+                }}
               >
-                <span className="tech-card px-5 py-2 rounded-md neon-border font-medium">
-                  Software Engineer
-                </span>
-                <span className="tech-card px-5 py-2 rounded-md neon-border font-medium">
-                  Data Analyst
-                </span>
-                <span className="tech-card px-5 py-2 rounded-md neon-border font-medium">
-                  Machine Learning Developer
-                </span>
+                <div className="flex flex-col items-center">
+                  <p className="text-sm text-gray-400 mb-2">Scroll Down</p>
+                  <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center p-1">
+                    <div className="w-1 h-2 bg-primary rounded-full animate-pulse"></div>
+                  </div>
+                </div>
               </motion.div>
-              
-              {/* Hero decorative elements */}
-              <div className="mt-12 relative h-8">
-                <div className="absolute left-0 right-0 h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent"></div>
-                <div className="absolute left-1/2 top-0 -translate-x-1/2 w-px h-8 bg-gradient-to-b from-primary/30 to-transparent"></div>
-              </div>
             </div>
           </section>
           
-          {/* Navigation Tabs */}
+          {/* Navigation Tabs - Sticky when scrolling */}
           <NavTabs activeTab={activeTab} onTabChange={handleTabChange} />
           
           {/* Content Section */}
