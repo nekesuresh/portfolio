@@ -1,4 +1,5 @@
 import React from 'react';
+import { Github, Linkedin, Code, FileText } from 'lucide-react';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -7,9 +8,9 @@ const Footer = () => {
     <footer className="relative z-10 py-8 px-4 md:px-8 mt-16 border-t border-gray-800">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          {/* About Section */}
+          {/* Professional Profile */}
           <div>
-            <h3 className="futuristic-subtitle text-lg font-medium mb-4">About</h3>
+            <h3 className="futuristic-subtitle text-lg font-medium mb-4">Professional Profile</h3>
             <p className="text-gray-400 text-sm">
               A passionate software engineer with a focus on creating innovative solutions. 
               Constantly exploring new technologies and methodologies to stay at the forefront of software development.
@@ -21,23 +22,47 @@ const Footer = () => {
             <h3 className="futuristic-subtitle text-lg font-medium mb-4">Quick Links</h3>
             <ul className="space-y-2">
               <li>
-                <a href="#about" className="text-gray-400 hover:text-primary text-sm transition-colors">
-                  About Me
+                <a 
+                  href="https://github.com/nekesuresh" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center"
+                >
+                  <Github className="h-4 w-4 mr-2" />
+                  GitHub
                 </a>
               </li>
               <li>
-                <a href="#experience" className="text-gray-400 hover:text-primary text-sm transition-colors">
-                  Professional Experience
+                <a 
+                  href="https://www.linkedin.com/in/nekethasuresh/" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center"
+                >
+                  <Linkedin className="h-4 w-4 mr-2" />
+                  LinkedIn
                 </a>
               </li>
               <li>
-                <a href="#projects" className="text-gray-400 hover:text-primary text-sm transition-colors">
-                  Projects
+                <a 
+                  href="https://devpost.com/sureshneketha?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center"
+                >
+                  <Code className="h-4 w-4 mr-2" />
+                  Devpost
                 </a>
               </li>
               <li>
-                <a href="#skills" className="text-gray-400 hover:text-primary text-sm transition-colors">
-                  Skills
+                <a 
+                  href="/assets/NekethaSuresh.pdf" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="text-gray-400 hover:text-primary text-sm transition-colors flex items-center"
+                >
+                  <FileText className="h-4 w-4 mr-2" />
+                  Resume
                 </a>
               </li>
             </ul>
@@ -50,10 +75,10 @@ const Footer = () => {
               Feel free to reach out to discuss potential opportunities or collaborations.
             </p>
             <a 
-              href="mailto:neketha@example.com"
+              href="mailto:sureshneketha@gmail.com"
               className="inline-block text-primary hover:text-primary/80 transition-colors text-sm"
             >
-              neketha@example.com
+              sureshneketha@gmail.com
             </a>
             <div className="mt-4">
               <a 

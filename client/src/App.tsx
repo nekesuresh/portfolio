@@ -12,7 +12,7 @@ import Projects from "@/sections/Projects";
 import Education from "@/sections/Education";
 import Skills from "@/sections/Skills";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import profileImg from "@assets/WhatsApp Image 2025-03-29 at 19.17.03_b83321a6.jpg";
+import profileImg from "@assets/WhatsApp Image 2025-03-29 at 19.35.17_63e3ab95.jpg";
 
 // Tab types for navigation
 type Tab = 'about' | 'experience' | 'projects' | 'education' | 'skills';
@@ -135,21 +135,38 @@ function App() {
                 </p>
               </motion.div>
               
-              {/* Scroll indicator */}
+              {/* Social links */}
               <motion.div 
-                className="absolute bottom-12 left-1/2 transform -translate-x-1/2"
+                className="mt-8"
                 initial={{ opacity: 0 }}
-                animate={{ opacity: 1, y: [0, 10, 0] }}
-                transition={{ 
-                  opacity: { delay: 1.2, duration: 1 },
-                  y: { delay: 1.2, duration: 1.5, repeat: Infinity, repeatType: "loop" }
-                }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 0.8, delay: 0.9 }}
               >
-                <div className="flex flex-col items-center">
-                  <p className="text-sm text-gray-400 mb-2">Scroll Down</p>
-                  <div className="w-6 h-10 border-2 border-primary/50 rounded-full flex justify-center p-1">
-                    <div className="w-1 h-2 bg-primary rounded-full animate-pulse"></div>
-                  </div>
+                <div className="flex justify-center space-x-4">
+                  <a 
+                    href="https://github.com/nekesuresh" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="tech-card px-4 py-2 rounded-md neon-border"
+                  >
+                    GitHub
+                  </a>
+                  <a 
+                    href="https://www.linkedin.com/in/nekethasuresh/" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="tech-card px-4 py-2 rounded-md neon-border"
+                  >
+                    LinkedIn
+                  </a>
+                  <a 
+                    href="https://devpost.com/sureshneketha?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="tech-card px-4 py-2 rounded-md neon-border"
+                  >
+                    DevPost
+                  </a>
                 </div>
               </motion.div>
             </div>

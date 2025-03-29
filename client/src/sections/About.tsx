@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { Card } from "@/components/ui/card";
 import { resumeData } from "@/data/resumeData";
-import { MapPin, Mail, Phone, AtSign, Code, Star, Book, Cpu } from 'lucide-react';
+import { MapPin, Mail, Phone, AtSign, Code, Star, Book, LineChart } from 'lucide-react';
 
 const About = () => {
   const { contactInfo } = resumeData;
@@ -38,35 +38,12 @@ const About = () => {
                     <p className="text-xs text-white/70">5+ Projects</p>
                   </div>
                   <div className="tech-card p-3 rounded-md text-center">
-                    <Book className="h-5 w-5 text-primary mb-1 mx-auto" />
-                    <p className="text-xs text-white/70">MS CS</p>
+                    <LineChart className="h-5 w-5 text-primary mb-1 mx-auto" />
+                    <p className="text-xs text-white/70">Analyst</p>
                   </div>
                   <div className="tech-card p-3 rounded-md text-center">
-                    <Cpu className="h-5 w-5 text-primary mb-1 mx-auto" />
-                    <p className="text-xs text-white/70">AI/ML</p>
-                  </div>
-                </div>
-                
-                {/* Contact Section */}
-                <div className="w-full">
-                  <h3 className="futuristic-subtitle text-xl font-semibold mb-4 text-center lg:text-left">Contact</h3>
-                  <div className="flex flex-col gap-3">
-                    <div className="tech-card p-3 rounded-md flex items-center">
-                      <MapPin className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{contactInfo.location}</span>
-                    </div>
-                    <div className="tech-card p-3 rounded-md flex items-center">
-                      <Mail className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{contactInfo.email}</span>
-                    </div>
-                    <div className="tech-card p-3 rounded-md flex items-center">
-                      <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">{contactInfo.phone}</span>
-                    </div>
-                    <div className="tech-card p-3 rounded-md flex items-center">
-                      <AtSign className="h-5 w-5 text-primary mr-3 flex-shrink-0" />
-                      <span className="text-white/80 text-sm">LinkedIn / Github</span>
-                    </div>
+                    <Book className="h-5 w-5 text-primary mb-1 mx-auto" />
+                    <p className="text-xs text-white/70">MS CS</p>
                   </div>
                 </div>
               </div>
@@ -74,13 +51,13 @@ const About = () => {
               {/* About Content */}
               <div className="lg:w-3/4">                
                 <div className="space-y-4 text-white/80">
-                  <p className="futuristic-subtitle">
+                  <p className="text-white/80">
                     I'm a Computer Science graduate student at the University of North Carolina at Charlotte with a passion for developing intelligent solutions that solve real-world problems. With experience in machine learning, data analysis, and full-stack development, I bring a comprehensive approach to software engineering challenges.
                   </p>
-                  <p>
+                  <p className="text-white/80">
                     My professional journey includes multiple internships where I've applied machine learning techniques to enhance business outcomes, developed responsive web applications, and engineered data-driven solutions that produce tangible results.
                   </p>
-                  <p>
+                  <p className="text-white/80">
                     I'm constantly exploring new technologies and frameworks to stay at the cutting edge of software development, with a particular interest in artificial intelligence and its applications across various domains.
                   </p>
                   
