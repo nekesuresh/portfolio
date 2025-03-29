@@ -1,0 +1,118 @@
+export const resumeData = {
+  personalInfo: {
+    name: "NEKETHA SURESH",
+    title: "Computer Science Professional",
+    summary: "Computer Science professional with expertise in Machine Learning, Web Development, and Data Analysis",
+  },
+  contactInfo: {
+    location: "Charlotte, North Carolina",
+    email: "sureshneketha@gmail.com",
+    phone: "+1 (704)-222-6867",
+    linkedin: "https://linkedin.com",
+    github: "https://github.com",
+    citizenship: "US Citizen"
+  },
+  education: [
+    {
+      institution: "University of North Carolina at Charlotte",
+      degree: "Master of Science in Computer Science",
+      gpa: "3.77/4",
+      location: "Charlotte, North Carolina",
+      period: "2023 - Present",
+      courses: [
+        "AI-Driven Development",
+        "Network Based Application Development",
+        "Data Structures and Algorithms",
+        "Software System Design and Implementation",
+        "Database Management Systems",
+        "Big Data Analytics",
+        "Visual Analytics",
+        "Knowledge Discovery in Databases"
+      ]
+    },
+    {
+      institution: "Vellore Institute of Technology",
+      degree: "Bachelor of Technology in Computer Science and Engineering",
+      gpa: "8.2/10",
+      location: "Chennai, Tamil Nadu",
+      period: "2019 - 2023"
+    }
+  ],
+  experiences: [
+    {
+      title: "Machine Learning Intern",
+      company: "Metayb",
+      location: "Chennai, Tamil Nadu",
+      period: "May - Nov 2022",
+      responsibilities: [
+        "Engineered a custom time-series database engine, boosting data ingestion speed by 30%, critical for real-time analytics.",
+        "Implemented an LSTM neural network for sales forecasting, achieving 87% prediction accuracy, significantly enhancing decision-making processes.",
+        "Applied machine learning techniques, such as linear regression, to forecast customer lifetime value with 95% accuracy, directly supporting targeted customer retention and precision marketing initiatives.",
+        "Developed a logistic regression model to reduce customer churn, cutting churn rates by 10% and bolstering retention through data-driven insights."
+      ]
+    },
+    {
+      title: "Data Analyst Intern",
+      company: "LingaTech",
+      location: "Pennsylvania, United States",
+      period: "Nov 2021 - Feb 2022",
+      responsibilities: [
+        "Performed predictive analytics on user behavior data using the Naive Bayes algorithm, enhancing forecast accuracy of business outcomes by 15%.",
+        "Led prescriptive analytics efforts using behavioral data, implementing a decision tree model that improved product satisfaction (measured by Net Promoter Score) by 20% and decreased decision latency by 25%.",
+        "Designed and deployed interactive data visualization dashboards in Tableau, utilizing API integrations for enhanced user experience and operational efficiency."
+      ]
+    },
+    {
+      title: "Software Development Intern",
+      company: "Eminence Tech",
+      location: "Bangalore, Karnataka",
+      period: "Jun - Sep 2021",
+      responsibilities: [
+        "Transformed business requirements into actionable technical specifications using UML diagrams, facilitating agile software development for a new pharmacy management system.",
+        "Executed full-stack development with JavaScript, Node.js, and React, optimizing system scalability and user engagement.",
+        "Enhanced system performance by 30% through strategic middleware management and asynchronous programming in Node.js.",
+        "Utilized React.js profiling tools to optimize front-end performance, achieving a 25% efficiency increase in system operations."
+      ]
+    }
+  ],
+  projects: [
+    {
+      title: "IntelliClaim.ai",
+      subtitle: "AI-driven Insurance Claims Assessment Solution",
+      description: "Engineered and deployed IntelliClaim.ai, utilizing Python, TensorFlow, and React to incorporate multimodal AI, enhancing the accuracy of insurance claims processing and reducing fraud identification false positives by 30%.",
+      technologies: ["Python", "TensorFlow", "React", "Machine Learning"],
+      liveLink: "#",
+      repoLink: "#"
+    },
+    {
+      title: "Dr. COCO",
+      subtitle: "AI-Powered Mental Health Support Tool for Children",
+      description: "Engineered Dr. COCO, an AI chatbot leveraging Python, Flask, and OpenAI to identify early mental health issues in children, utilizing interactive games and storytelling for engagement.",
+      technologies: ["Python", "Flask", "OpenAI", "NLP"],
+      liveLink: "#",
+      repoLink: "#"
+    },
+    {
+      title: "GenAI",
+      subtitle: "Generative AI Trend Visualization and Analysis",
+      description: "Developed a Single Page Application (SPA) using Angular and Node.js to visualize trends in generative artificial intelligence and automation across various industries.",
+      technologies: ["Angular", "Node.js", "Chart.js", "RESTful APIs"],
+      liveLink: "#",
+      repoLink: "#"
+    }
+  ],
+  skills: {
+    programming: [
+      "Python", "Java", "JavaScript", "HTML", "CSS", "React.js", 
+      "Angular", "Node.js", "Express", "Flask", "C++"
+    ],
+    data: [
+      "MySQL", "MongoDB", "TensorFlow", "PyTorch", "Scikit-Learn", 
+      "Pandas", "NumPy", "Tableau", "PowerBI"
+    ],
+    tools: [
+      "Git", "Docker", "AWS", "Azure", "Agile", "Scrum", 
+      "SDLC", "UML", "DevOps", "Cybersecurity"
+    ]
+  }
+};
