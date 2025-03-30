@@ -25,9 +25,12 @@ const Experience = () => {
                   <p className="text-white/60 text-sm">{experience.period}</p>
                 </div>
               </div>
-              <ul className="list-disc list-inside text-white/80 space-y-2 ml-1">
+              <ul className="space-y-2">
                 {experience.responsibilities.map((responsibility, respIndex) => (
-                  <li key={respIndex}>{responsibility}</li>
+                  <li key={respIndex} className="text-white/80 flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>{responsibility}</span>
+                  </li>
                 ))}
               </ul>
             </div>
@@ -51,9 +54,12 @@ const Experience = () => {
                   <p className="text-white/60 text-sm">{research.period}</p>
                 </div>
               </div>
-              <ul className="list-disc list-inside text-white/80 space-y-2 ml-1">
+              <ul className="space-y-2">
                 {research.responsibilities.map((responsibility, respIndex) => (
-                  <li key={respIndex}>{responsibility}</li>
+                  <li key={respIndex} className="text-white/80 flex items-start">
+                    <span className="text-primary mr-2">•</span>
+                    <span>{responsibility}</span>
+                  </li>
                 ))}
               </ul>
             </div>

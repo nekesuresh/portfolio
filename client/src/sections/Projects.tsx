@@ -28,13 +28,28 @@ const Projects = () => {
                   </div>
                   <p className="text-primary/90 font-medium text-sm mb-2">{project.subtitle}</p>
                 </div>
-                <p className="text-white/80 mb-4 flex-grow">{project.description}</p>
-                <div className="flex flex-wrap gap-2 mt-auto">
-                  {project.technologies.map((tech, techIndex) => (
-                    <span key={techIndex} className="bg-primary/10 text-xs text-white/80 px-2 py-1 rounded-md">
-                      {tech}
-                    </span>
-                  ))}
+                
+                <div className="mb-4 flex-grow">
+                  <ul className="space-y-2">
+                    <li className="text-white/80 flex items-start">
+                      <span className="text-primary mr-2">•</span>
+                      <span>{project.description}</span>
+                    </li>
+                  </ul>
+                </div>
+                
+                <div className="mt-4">
+                  <h4 className="text-white font-medium mb-2">Technologies:</h4>
+                  <div className="flex flex-wrap gap-2">
+                    {project.technologies.map((tech, techIndex) => (
+                      <span 
+                        key={techIndex} 
+                        className="inline-block px-3 py-1.5 rounded-full bg-primary/10 text-white/90 text-xs font-medium hover:bg-primary/20 transition-colors"
+                      >
+                        {tech}
+                      </span>
+                    ))}
+                  </div>
                 </div>
               </div>
             ))}
