@@ -75,6 +75,19 @@ export const resumeData = {
       ]
     }
   ],
+  researchExperience: [
+    {
+      title: "Research Assistant",
+      institution: "School Of Computer Science and Engineering",
+      company: "Vellore Institute of Technology, Chennai",
+      location: "Chennai, Tamil Nadu",
+      period: "Aug 2022 - Apr 2023",
+      responsibilities: [
+        "Participated in the publication of a paper titled 'Preclinical Diagnosis of Schizophrenia using EEG Time-Frequency Analysis during Motor Function Test and Verbal Fluency Test' under the guidance of Professor Tamilarasi.",
+        "Contributed to the development and implementation of signal processing algorithms, including the Multi-SynchroSqueezing Transform (MSST), for EEG data analysis in a pioneering study on preclinical schizophrenia diagnosis."
+      ]
+    }
+  ],
   projects: [
     {
       title: "IntelliClaim.ai",
@@ -91,6 +104,14 @@ export const resumeData = {
       technologies: ["Python", "Flask", "OpenAI", "NLP"],
       liveLink: "https://devpost.com/software/dr-coco",
       repoLink: "https://devpost.com/software/dr-coco"
+    },
+    {
+      title: "GenAI",
+      subtitle: "Generative AI Trend Visualization and Analysis",
+      description: "Developed a Single Page Application (SPA) using Angular and Node.js to visualize trends in generative artificial intelligence and automation across various industries.",
+      technologies: ["Angular", "Node.js", "Chart.js", "RESTful APIs"],
+      liveLink: "https://github.com/nekesuresh/genai-innovations",
+      repoLink: "https://github.com/nekesuresh/genai-innovations"
     },
     {
       title: "Antibiotic Resistance Prediction",

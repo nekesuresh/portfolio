@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@/components/ui/card";
-import { ExternalLink, FileText } from "lucide-react";
+import { ExternalLink } from "lucide-react";
 import { resumeData } from "@/data/resumeData";
 
 const Projects = () => {
@@ -23,9 +23,6 @@ const Projects = () => {
                     <div className="flex space-x-2">
                       <a href={project.liveLink} className="text-primary hover:text-primary/80" target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-5 w-5" />
-                      </a>
-                      <a href={project.repoLink} className="text-primary hover:text-primary/80" target="_blank" rel="noopener noreferrer">
-                        <FileText className="h-5 w-5" />
                       </a>
                     </div>
                   </div>

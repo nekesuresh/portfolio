@@ -19,10 +19,10 @@ const Footer = () => {
             >
               sureshneketha@gmail.com
             </a>
-            <div className="mt-4 flex justify-center">
+            <div className="mt-2 flex justify-center">
               <a 
                 href="tel:+17042226867"
-                className="inline-block tech-card px-4 py-2 rounded-md neon-border text-sm"
+                className="inline-block text-primary hover:text-primary/80 transition-colors text-sm"
               >
                 +1 (704) 222-6867
               </a>
