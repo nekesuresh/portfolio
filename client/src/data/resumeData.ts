@@ -81,24 +81,32 @@ export const resumeData = {
       subtitle: "AI-driven Insurance Claims Assessment Solution",
       description: "Engineered and deployed IntelliClaim.ai, utilizing Python, TensorFlow, and React to incorporate multimodal AI, enhancing the accuracy of insurance claims processing and reducing fraud identification false positives by 30%.",
       technologies: ["Python", "TensorFlow", "React", "Machine Learning"],
-      liveLink: "#",
-      repoLink: "#"
+      liveLink: "https://devpost.com/software/intelliclaim-ai",
+      repoLink: "https://devpost.com/software/intelliclaim-ai"
     },
     {
       title: "Dr. COCO",
       subtitle: "AI-Powered Mental Health Support Tool for Children",
       description: "Engineered Dr. COCO, an AI chatbot leveraging Python, Flask, and OpenAI to identify early mental health issues in children, utilizing interactive games and storytelling for engagement.",
       technologies: ["Python", "Flask", "OpenAI", "NLP"],
-      liveLink: "#",
-      repoLink: "#"
+      liveLink: "https://devpost.com/software/dr-coco",
+      repoLink: "https://devpost.com/software/dr-coco"
     },
     {
-      title: "GenAI",
-      subtitle: "Generative AI Trend Visualization and Analysis",
-      description: "Developed a Single Page Application (SPA) using Angular and Node.js to visualize trends in generative artificial intelligence and automation across various industries.",
-      technologies: ["Angular", "Node.js", "Chart.js", "RESTful APIs"],
-      liveLink: "#",
-      repoLink: "#"
+      title: "Antibiotic Resistance Prediction",
+      subtitle: "Capstone Project: Predicting Antibiotic Resistance in Azithromycin and Ciprofloxacin",
+      description: "Compared four machine learning models (XGBoost, Random Forest, SVM, Elastic Net) for antibiotic resistance prediction, with Random Forest achieving 91% accuracy and Elastic Net the fastest training time at 0.05 seconds per fold. Conducted 5-fold cross-validation on bacterial resistance phenotypes.",
+      technologies: ["Python", "Machine Learning", "Random Forest", "XGBoost", "SVM"],
+      liveLink: "https://drive.google.com/file/d/1Z45NBbfQfl9ZxcwYZ_fHH-U-WRSNYKkb/view?usp=sharing",
+      repoLink: "https://drive.google.com/file/d/1Z45NBbfQfl9ZxcwYZ_fHH-U-WRSNYKkb/view?usp=sharing"
+    },
+    {
+      title: "K Means Clustering with DTW Metric",
+      subtitle: "Time Series Classification Using Dynamic Time Warping",
+      description: "Implemented the DTW algorithm to find the best alignment between time series data using dynamic programming algorithms similar to the needleman-wunsch algorithm. Used DTW distance to classify time series data with KNN, achieving performance comparable to LSTM models.",
+      technologies: ["Python", "Dynamic Programming", "K-Means", "Multiprocessing", "Time Series Analysis"],
+      liveLink: "https://github.com/nekesuresh/K-Means-Clustering-with-DTW-Metric",
+      repoLink: "https://github.com/nekesuresh/K-Means-Clustering-with-DTW-Metric"
     }
   ],
   skills: {

@@ -35,7 +35,7 @@ const About = () => {
                   </div>
                   <div className="tech-card p-3 rounded-md text-center">
                     <Star className="h-5 w-5 text-primary mb-1 mx-auto" />
-                    <p className="text-xs text-white/70">5+ Projects</p>
+                    <p className="text-xs text-white/70">AI/ML</p>
                   </div>
                   <div className="tech-card p-3 rounded-md text-center">
                     <LineChart className="h-5 w-5 text-primary mb-1 mx-auto" />
