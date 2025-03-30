@@ -12,7 +12,7 @@ import Projects from "@/sections/Projects";
 import Education from "@/sections/Education";
 import Skills from "@/sections/Skills";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import profileImg from "@assets/Untitled design.png";
+import profileImg from "@assets/WhatsApp Image 2025-03-29 at 19.35.17_63e3ab95.jpg";
 
 // Tab types for navigation
 type Tab = 'about' | 'experience' | 'projects' | 'education' | 'skills';
