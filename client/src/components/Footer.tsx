@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="text-center">
             <h3 className="futuristic-subtitle text-lg font-medium mb-4">Get In Touch</h3>
             <p className="text-gray-400 text-sm mb-2">
-              Feel free to reach out to discuss potential opportunities or collaborations.
+              Feel free to reach out to discuss potential opportunities.
             </p>
             <a 
               href="mailto:sureshneketha@gmail.com"
