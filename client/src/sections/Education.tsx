@@ -29,7 +29,7 @@ const Education = () => {
                 <p className="text-white/80"><span className="text-white/60">GPA:</span> {edu.gpa}</p>
               </div>
               {edu.courses && (
-                <div>
+                <div className="mb-4">
                   <h4 className="text-white font-medium mb-2">Relevant Coursework:</h4>
                   <div className="flex flex-wrap gap-2">
                     {edu.courses.map((course, courseIndex) => (
@@ -41,6 +41,19 @@ const Education = () => {
                       </span>
                     ))}
                   </div>
+                </div>
+              )}
+              {edu.campusInvolvement && (
+                <div>
+                  <h4 className="text-white font-medium mb-2">Campus Involvement & Achievements:</h4>
+                  <ul className="space-y-2">
+                    {edu.campusInvolvement.map((involvement, idx) => (
+                      <li key={idx} className="text-white/80 flex items-start">
+                        <span className="text-primary mr-2">•</span>
+                        <span>{involvement}</span>
+                      </li>
+                    ))}
+                  </ul>
                 </div>
               )}
             </div>

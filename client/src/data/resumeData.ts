@@ -35,7 +35,13 @@ export const resumeData = {
       degree: "Bachelor of Technology in Computer Science and Engineering",
       gpa: "8.2/10",
       location: "Chennai, Tamil Nadu",
-      period: "2019 - 2023"
+      period: "2019 - 2023",
+      campusInvolvement: [
+        "Research Assistant, School of Computer Science and Engineering (Aug 2022 - Apr 2023)",
+        "Associate Head of Marketing, Roteract Club VIT Chennai (Jul 2021 - Jul 2022)",
+        "Head of Visual Content, GirlUp VIT Chennai (Aug 2021 - Aug 2022)",
+        "Content Writer, GirlUp VIT Chennai (Dec 2020 - Aug 2021)"
+      ]
     }
   ],
   experiences: [
