@@ -40,14 +40,14 @@ function App() {
     switch (activeTab) {
       case 'about':
         return <About />;
+      case 'skills':
+        return <Skills />;
       case 'experience':
         return <Experience />;
       case 'projects':
         return <Projects />;
       case 'education':
         return <Education />;
-      case 'skills':
-        return <Skills />;
       default:
         return <About />;
     }
@@ -160,20 +160,20 @@ function App() {
                     LinkedIn
                   </a>
                   <a 
-                    href="https://devpost.com/sureshneketha?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    className="tech-card px-4 py-2 rounded-md neon-border m-1"
-                  >
-                    DevPost
-                  </a>
-                  <a 
                     href="https://drive.google.com/file/d/1W42YG4UpwcYTGDhQTKGhrmz8SWF8hyTY/view?usp=sharing" 
                     target="_blank" 
                     rel="noopener noreferrer"
                     className="tech-card px-4 py-2 rounded-md neon-border m-1"
                   >
                     Resume
+                  </a>
+                  <a 
+                    href="https://devpost.com/sureshneketha?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav" 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="tech-card px-4 py-2 rounded-md neon-border m-1"
+                  >
+                    DevPost
                   </a>
                 </div>
               </motion.div>
