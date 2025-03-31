@@ -10,7 +10,7 @@ const Header = () => {
           {/* Profile Section */}
           <div className="flex flex-col md:flex-row items-center gap-6">
             <Avatar className="w-28 h-28 profile-image animate-fade-in">
-              <AvatarImage src={profileImg} alt="Neketha Suresh" />
+              <AvatarImage src={"https://ibb.co/Fq8LYLcY"} alt="Neketha Suresh" />
               <AvatarFallback className="bg-primary/20 text-white">NS</AvatarFallback>
             </Avatar>
             
