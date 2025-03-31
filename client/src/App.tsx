@@ -12,8 +12,7 @@ import Projects from "@/sections/Projects";
 import Education from "@/sections/Education";
 import Skills from "@/sections/Skills";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-const profileImg = "https://i.ibb.co/jZ3PwPqw/Untitled-design.png";
-
+import profileImg from "@assets/Untitled design.png";
 
 // Tab types for navigation
 type Tab = 'about' | 'experience' | 'projects' | 'education' | 'skills';
@@ -95,11 +94,11 @@ function App() {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           {/* Hero Section with Profile */}
-          <section className="relative z-10 min-h-screen flex flex-col items-center justify-center px-4 pb-20">
+          <section className="relative z-10 h-[100vh] flex flex-col items-center justify-center px-4 py-0">
             <div className="max-w-6xl mx-auto text-center">
               {/* Profile Image */}
               <motion.div 
-                className="mb-8"
+                className="mb-5"
                 initial={{ scale: 0.9, opacity: 0 }}
                 animate={{ scale: 1, opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.3 }}
@@ -107,7 +106,8 @@ function App() {
                 <div className="relative inline-block">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/50 via-purple-500/50 to-primary/50 blur-md"></div>
                   <Avatar className="w-48 h-48 md:w-56 md:h-56 relative profile-image">
-<AvatarImage src={"https://i.ibb.co/jZ3PwPqw/Untitled-design.png"} alt="Neketha Suresh" />                    <AvatarFallback className="bg-primary/20 text-white">NS</AvatarFallback>
+                    <AvatarImage src={profileImg} alt="Neketha Suresh" className="object-cover" />
+                    <AvatarFallback className="bg-primary/20 text-white">NS</AvatarFallback>
                   </Avatar>
                 </div>
               </motion.div>
@@ -137,7 +137,7 @@ function App() {
               
               {/* Social links */}
               <motion.div 
-                className="mt-8"
+                className="mt-6"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
                 transition={{ duration: 0.8, delay: 0.9 }}
