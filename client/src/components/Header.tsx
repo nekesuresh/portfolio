@@ -1,6 +1,6 @@
 import React from 'react';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import profileImg from "@assets/WhatsApp Image 2025-03-29 at 19.17.03_b83321a6.jpg";
+import profileImg from "@assets/Untitled design-CeLvHTwV.png";
 
 const Header = () => {
   return (
