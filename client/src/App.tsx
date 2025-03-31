@@ -107,8 +107,7 @@ function App() {
                 <div className="relative inline-block">
                   <div className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/50 via-purple-500/50 to-primary/50 blur-md"></div>
                   <Avatar className="w-48 h-48 md:w-56 md:h-56 relative profile-image">
-                    <AvatarImage src={profileImg} alt="Neketha Suresh" className="object-cover" />
-                    <AvatarFallback className="bg-primary/20 text-white">NS</AvatarFallback>
+<AvatarImage src={"https://i.ibb.co/jZ3PwPqw/Untitled-design.png"} alt="Neketha Suresh" />                    <AvatarFallback className="bg-primary/20 text-white">NS</AvatarFallback>
                   </Avatar>
                 </div>
               </motion.div>
