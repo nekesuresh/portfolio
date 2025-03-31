@@ -1,6 +1,6 @@
 import React from 'react';
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import profileImg from "@assets/Untitled design-CeLvHTwV.png";
+const profileImg = "https://i.ibb.co/jZ3PwPqw/Untitled-design.png";
 
 const Header = () => {
   return (
@@ -10,7 +10,7 @@ const Header = () => {
           {/* Profile Section */}
           <div className="flex flex-col md:flex-row items-center gap-6">
             <Avatar className="w-28 h-28 profile-image animate-fade-in">
-              <AvatarImage src={"https://ibb.co/Fq8LYLcY"} alt="Neketha Suresh" />
+              <AvatarImage src={"https://i.ibb.co/jZ3PwPqw/Untitled-design.png"} alt="Neketha Suresh" />
               <AvatarFallback className="bg-primary/20 text-white">NS</AvatarFallback>
             </Avatar>
             

@@ -12,7 +12,8 @@ import Projects from "@/sections/Projects";
 import Education from "@/sections/Education";
 import Skills from "@/sections/Skills";
 import { Avatar, AvatarImage, AvatarFallback } from "@/components/ui/avatar";
-import profileImg from "@assets/Untitled design.png";
+const profileImg = "https://i.ibb.co/jZ3PwPqw/Untitled-design.png";
+
 
 // Tab types for navigation
 type Tab = 'about' | 'experience' | 'projects' | 'education' | 'skills';
