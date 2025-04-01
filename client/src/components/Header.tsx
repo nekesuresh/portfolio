@@ -24,7 +24,7 @@ const Header = () => {
               <div className="flex items-center justify-center md:justify-start gap-4 mt-2">
                 <div className="flex items-center gap-1 text-gray-400 text-sm">
                   <span className="inline-block w-2 h-2 rounded-full bg-green-400"></span>
-                  Charlotte, North Carolina
+                  Dallas, Texas
                 </div>
                 <div className="text-gray-400 text-sm">•</div>
                 <div className="text-gray-400 text-sm">
